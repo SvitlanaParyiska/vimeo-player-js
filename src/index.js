@@ -91,7 +91,7 @@ const iframe = document.querySelectorAll('iframe');
 const swiper2 = new Swiper('.swiper-video', {
   slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 100,
+  spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
