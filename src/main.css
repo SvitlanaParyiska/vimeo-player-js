@@ -1,7 +1,6 @@
 @import url('../node_modules/modern-normalize/modern-normalize.css');
 
-:root  {
-  --swiper-theme-color: #fff;
+:root {
   --swiper-pagination-bullet-size: 5px;
   --swiper-pagination-bullet-inactive-color: #fafafa;
   --swiper-pagination-bullet-inactive-opacity: 0.5;
@@ -43,6 +42,7 @@ img {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
+  color: #fff;
   font-size: 16px;
 }
 
@@ -97,4 +97,8 @@ img {
   padding-bottom: 25px !important;
   padding-top: 15px;
   background-color: #000;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
 }
