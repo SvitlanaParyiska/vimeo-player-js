@@ -110,7 +110,6 @@ const swiper2 = new Swiper('.swiper-video', {
 function openModal(index) {
   modal.classList.toggle('is-hidden');
   body.classList.toggle('no-scroll');
-  body.addEventListener('keydown', onEscPress);
   btnClose.addEventListener('click', closeModal);
   player = new Player(iframe[index]);
   swiper2.slideTo(index);
@@ -121,14 +120,7 @@ function openModal(index) {
 function closeModal() {
   modal.classList.toggle('is-hidden');
   body.classList.toggle('no-scroll');
-  body.removeEventListener('keydown', onEscPress);
   btnClose.removeEventListener('click', closeModal);
   player.unload();
   player = null;
-}
-
-function onEscPress(key) {
-  if (key.code === 'Escape') {
-    closeModal();
-  }
 }
